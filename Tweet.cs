@@ -5,7 +5,7 @@ using System.Text;
 
 namespace STFeedS
 {
-    class Tweet
+   public class Tweet
     {
         public string Text { get; set; }
         public string CleanText { get; set; }

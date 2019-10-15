@@ -4,7 +4,7 @@ using System.Text;
 
 namespace STFeedS.Enums
 {
-    enum TweetType
+   public enum TweetType
     {
         Tweet, Retweet
     }

@@ -10,7 +10,7 @@ using STFeedS.Enums;
 
 namespace STFeedS
 {
-    class TwitterFeedScraper
+   public class TwitterFeedScraper
     {
         private HtmlWeb web { get; set; }
 
@@ -185,7 +185,7 @@ namespace STFeedS
 
             DateTime lastTweetDate = toDate;
 
-            var twitterUrl = twitterUsername;
+            var twitterUrl = "https://twitter.com/" + twitterUsername;
 
             bool isFirstItemFound = false;
 
