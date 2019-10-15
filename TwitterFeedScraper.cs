@@ -28,14 +28,16 @@ namespace STFeedS
             {
                 HttpResponseMessage response = await client.GetAsync(url);
 
-                if (response.IsSuccessStatusCode)
+                
+
+                if (!response.IsSuccessStatusCode)
                 {
-                    return true;
-                }
-                else
-                {
+                    //TODO: some logic for different error codes
+                   
                     return false;
                 }
+
+                return true;
             }
 
         }
